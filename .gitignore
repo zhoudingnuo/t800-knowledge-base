@@ -1,0 +1,21 @@
+# ── 本仓库只收录知识库正文：README.md + docs/ + scripts/ ──
+# 工作区里的其余内容（repos/ 官方快照、models/、sim/、isaac_ws/、rosbag/、
+# pointlio/、robot_control/、sdk_deps/、setup_logs/ 等）不入库：
+/*
+!/.gitignore
+!/README.md
+!/docs/
+!/scripts/
+
+# 保险：任何位置混入的运行产物 / 大文件
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.venv/
+*.bag
+*.mcap
+*.pcd
+*.zst
+*.gguf
+*.onnx
